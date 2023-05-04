@@ -1,0 +1,253 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Arcade Gaming Platform</title>
+        <meta name="description" content="Arcade Gaming Platform created by the Smoky Tekno Trio">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta property="og:title" content="Arcade Gaming Platform">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="">
+        <meta property="og:image" content="">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <style>
+            body {
+                font-family: 'Press Start 2P', cursive;
+                line-height: 1.6;
+                margin: 30px;
+                background-color: #222;
+                color: #f0f0f0;
+                padding: 20px;
+                background-image: linear-gradient(120deg, #222, #333, #222);
+                background-size: 200% 100%;
+                animation: animatedBackground 15s ease-in-out infinite; /* Updated duration */
+            }
+            h1, h2, h3 {
+                color: #f0f0f0;
+                margin-bottom: 20px;
+            }
+            p, pre {
+                margin-bottom: 20px;
+                line-height: 2; /* Adjust this value to create more or less space between the lines */
+            }
+            video {
+                width: 100%;
+                height: auto;
+            }
+            .library-logos {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 30px;
+                width: 100%;
+            }
+            .library-logos img {
+                padding-left: 5%;
+                padding-right: 5%;
+                margin-right: 10px;
+                width: 25%;
+            }
+            .logo-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+            .game-logo {
+                max-height: 128px;
+                margin-right: 20px;
+                float: right;
+            }
+            .game-title {
+                font-size: 1.5em;
+                border: 2px solid #f0f0f0;
+                padding: 5px 10px;
+                animation: blinker 1.5s linear infinite, float 2s ease-in-out infinite;
+                color: #f0f0f0;
+                float: left;
+            }
+            .diagram {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 20%;
+            }
+            @keyframes blinker {
+                50% {
+                    opacity: 0;
+                }
+            }
+            @keyframes float {
+                0% {
+                    transform: translateY(0);
+                }
+                50% {
+                    transform: translateY(-5px);
+                }
+                100% {
+                    transform: translateY(0);
+                }
+            }
+            @keyframes glowingText {
+                0% { text-shadow: 0 0 3px #f0f0f0, 0 0 6px #f0f0f0, 0 0 9px #f0f0f0; }
+                50% { text-shadow: 0 0 6px #f0f0f0, 0 0 12px #f0f0f0, 0 0 18px #f0f0f0; }
+                75% { text-shadow: 0 0 9px #f0f0f0, 0 0 18px #f0f0f0, 0 0 27px #f0f0f0; }
+                100% { text-shadow: 0 0 3px #f0f0f0, 0 0 6px #f0f0f0, 0 0 9px #f0f0f0; }
+            }
+
+            h1, h2, h3 {
+                animation: glowingText 4s ease-in-out infinite; /* Updated duration */
+            }
+            /* Added styles for the download button */
+            a {
+                text-decoration: none;
+            }
+            button {
+                font-family: 'Press Start 2P', cursive;
+                font-size: 1.2em;
+                padding: 10px 20px;
+                border: 2px solid #f0f0f0;
+                background-color: #222;
+                color: #f0f0f0;
+                cursor: pointer;
+                transition: transform 0.2s, background-color 0.2s;
+                animation: float 2s ease-in-out infinite;
+            }
+            button:hover {
+                transform: scale(1.1);
+                background-color: #f0f0f0;
+                color: #222;
+            }
+            @keyframes animatedBackground {
+                0% { background-position: 0 0; }
+                100% { background-position: 100% 0; }
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+                transition: transform 0.3s, filter 0.3s;
+                position: relative;
+            }
+            img::after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                opacity: 0;
+                transition: opacity 0.3s;
+            }
+            img:hover {
+                transform: scale(1.05);
+                filter: brightness(1.2);
+            }
+            img:hover::after {
+                opacity: 1;
+            }
+            h4 {
+                color: #f0f0f0;
+                margin-bottom: 20px;
+                font-size: 1.5em;
+            }
+            pre {
+                white-space: pre-wrap;
+            }
+        </style>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <meta name="theme-color" content="#222">
+    </head>
+    <body>
+
+        <div class="logo-container">
+            <h1 class="game-title">Arcade</h1>
+            <img class="game-logo" src="img/arcade_logo.jpg" alt="Game Logo">
+        </div>
+        <h2>About Us</h2>
+        <h4>Meet the Smoky Tekno Trio</h4>
+        <p>We are a team of three second-year students at EPITECH Paris, specializing in C++ development. Our passion for programming and video games has led us to create the Arcade Gaming Platform. We have diverse programming experience and expertise in multiple programming languages such as Elixir, Haskell, and Assembly.</p>
+        <ul>
+            <li><strong> Jean-Cyprien Roux</strong> - Lead Developer, Sound Designer, Game Designer, Core Developer, Game Developer, and SFML lib maker</li>
+            <li><strong> Titien Carelass</strong> - Ncurse Lib and Menu Creator</li>
+            <li><strong> Baptiste Leglaunec</strong> - SDL2 Lib and Config Creator</li>
+        </ul>
+        <br>
+        <p>Together, we have worked tirelessly to create a platform that allows gamers to enjoy classic games such as Nibbler and Snake in a modern way. We hope you enjoy our creation!</p>
+        <br>
+        <h3>Gameplay Video</h3>
+        <br>
+        <video controls>
+            <source src="img/gameplay.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+        <br> <br> <br> <br>
+        <h3>How to Play</h3>
+        <p>
+            <strong>Controls:</strong><br>
+        </p>
+        <ul>
+            <li>Z and S: Move up and down<br><br> </li>
+            <li>Q and D: Move left and right<br><br> </li>
+            <li>Arrow keys up and down: Switch graphical library<br><br></li>
+            <li>Arrow keys left and right: Switch game library<br><br></li>
+            <li>Enter: Confirm menu selection<br><br></li>
+            <li>Escape: Go back or exit in menu / high score<br> <br></li>
+        </ul>
+        <h3>Game Logic</h3>
+        <p>
+            <strong>Nibbler:<br><br></strong> The player controls a snake-like creature that moves around the screen, eating food. As the creature eats, it grows in length.<br> The player must avoid colliding with the creature's own body or the walls of the screen. The game ends when the creature collides with itself or the wall.<br><br>
+            <strong>Snake:<br><br></strong> The player controls a snake that moves around the screen, eating food. As the snake eats, it grows in length. <br>The player must avoid colliding with the snake's own body or the walls of the screen. The game ends when the snake collides with itself or the wall.<br> <br>
+        </p>
+        <br>
+        <h3>Installation</h3>
+        <p>To install the Arcade Gaming Platform, download the game ZIP file by clicking the button below, and install the game by following the instructions provided in the README file. If you have any issues during the installation process, please feel free to contact us for assistance.</p>
+        <br>
+        <div style="text-align: center;">
+            <a href="Arcade.zip" download>
+                <button>Download Game</button>
+            </a>
+        </div> <br> <br> <br> <br>
+        <p> If you want to use our program with Ubuntu, you need to install the following libraries: </p>
+        <pre>
+            $ sudo apt-get install libncurses5-dev libncursesw5-dev
+        </pre>
+        <pre>
+            $ sudo apt-get install libsdl2-dev libsdl2-image-dev libsdl2-ttf-dev libsdl2-mixer-dev
+        </pre>
+        <pre>
+            $ sudo apt-get install libsfml-dev
+        </pre> <br>
+        <h2>Project Overview</h2>
+        <p>Arcade is a gaming platform built by three EPITECH students who love programming and video games. The platform allows users to choose between two games: Nibbler and Snake. It also includes a configuration menu for customizing the gaming experience.</p>
+        <img src="img/diagram.png" alt="Diagram" class = "diagram">
+        <p>The platform uses three different graphics libraries: SDL2, SFML, and NCURSES. These libraries are implemented as dynamic libraries, which are loaded at runtime. This ensures a modular and flexible design, with each library acting as a plug-in that provides unique capabilities.</p>
+        <div class="library-logos">
+            <img src="img/logo_ncurse.png" alt="NCURSES Logo">
+            <img src="img/logo_sdl.png" alt="SDL Logo">
+            <img src="img/logo_sfml.png" alt="SFML Logo">
+        </div>
+        <p>It is strictly forbidden for the main program to directly reference any graphics library. Instead, each dynamic library is responsible for managing its own graphics and events. This separation ensures that the game logic remains independent of the rendering process.</p>
+
+        <!-- Footer -->
+        <footer style="text-align: center; margin-top: 30px;">
+            <p>&copy; 2023 Smoky Tekno Trio. All rights reserved.</p>
+            </footer>
+        <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+        <script>window.Modernizr || document.write('<script src="js/vendor/modernizr-3.11.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script> window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+        </body>
+        </html>
